@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV - Angel Hernandez</title>
+  <!-- Icono de pestaña -->
+  <link rel="icon" href="./assets/icon-1024x1024.png" />
+  <!-- Optimizacion para movil -->
+  <meta name="MobileOptimized" content="width" />
+  <!-- Que sepa que es una PWA-->
+   <meta name="HandheldFriendly" content="true" />
+   <!-- Optimizacion para iOS-->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="CV - Angel Hernandez" />
+  <!-- Iconos para iOS -->
+  <link rel="apple-touch-icon" href="./assets/icon-1024x1024.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/icon-128x128.png" />
+  <link rel="apple-touch-startup-image" href="./assets/icon-1024x1024.png" />
+  <!--Manifest -->
+  <link rel="manifest" href="./manifest.json" />
+  <meta name="description" content="CV y Portafolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <div class="id">
+        <img class="avatar" id="avatar" src="./assets/picture.jpg" alt="Avatar">
+        <div class="name">
+          <h1 id="fullName"></h1>
+          <p id="headline"></p>
+        </div>
+      </div>
+      <div class="actions">
+        <a id="btnEmail" class="btn" href="mailto:aahernandez@gmail.com">Email</a>
+        <a id="btnLinkedin" class="btn" href="https://www.linkedin.com/in/aahp" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a id="btnGithub" class="btn" href="github.com/aahpichardo" target="_blank" rel="noreferrer">GitHub</a>
+        <a id="btnCV" class="btn" href="https://drive.google.com/file/d/1xRvZhOcMhkMIJmQGF0hBhJvFj5guSjXT/view?usp=sharing" target="_blank" rel="noreferrer">Ver CV</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="card about">
+        <div class="section-title"><h2>Sobre mí</h2><div class="line"></div></div>
+        <p id="about"></p>
+      </section>
+
+      <section class="card">
+        <div class="section-title"><h2>Habilidades</h2><div class="line"></div></div>
+        <div class="skills-wrap" id="skills"></div>
+      </section>
+
+      <section class="card">
+        <div class="section-title"><h2>Experiencia</h2><div class="line"></div></div>
+        <div class="timeline" id="experience"></div>
+      </section>
+
+      <section class="card">
+        <div class="section-title"><h2>Proyectos</h2><div class="line"></div></div>
+        <div class="grid" id="projects"></div>
+      </section>
+
+      <section class="card">
+        <div class="section-title"><h2>Educación</h2><div class="line"></div></div>
+        <div class="timeline" id="education"></div>
+      </section>
+
+      <section class="card contact-form">
+        <div class="section-title"><h2>Contáctame</h2><div class="line"></div></div>
+        <form id="contactForm" class="form-grid">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Asunto</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            ¡Pongamonos en contacto!
+          </button>
+        </form>
+      </section>
+
+      <footer>
+        <span id="footerNote"></span>
+      </footer>
+    </main>
+  </div>
+
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/main.js"></script>
+</body>
+</html>
